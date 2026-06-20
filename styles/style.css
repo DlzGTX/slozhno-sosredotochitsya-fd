@@ -236,3 +236,164 @@
   min-height: 668px;
   background-color: var(--background-color); 
 }
+
+
+@media (min-width:768px){
+  .header {
+    min-height: 1024px;
+    gap: 145px;
+    margin-bottom: 0px;
+  }
+
+  .header__theme-menu {
+    margin-right: 27px;
+    margin-top: 190px;
+  }
+
+  .header__title {
+  display: flex;
+  flex-direction: row;
+  gap:83px;
+  margin-top: 14px
+  } 
+
+  .header__title-link {
+    margin: 0;
+  }
+
+  .header__description{
+    inline-size: 364px;
+    justify-self: flex-end;
+    margin-right: 20px;
+  }
+  
+  .header__decor-text{
+    top: 20px;
+    right: 49px;
+  }
+
+  .header__decor-text::after{
+    top: 8px;
+    right: -20px;
+  }
+
+  .decoration__zone::before{
+    top: 20px;
+    right: 20px;
+  }
+
+  .decoration__zone::after{
+    bottom: 20px;
+    left: 20px;
+  }
+
+  .main {
+    padding-top: 60px;
+    --main-gap: 80px;
+    margin-bottom: 60px;
+  }
+
+  .section {
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .section__title {
+    margin-left: 20px;
+    --padding-horizontal: 0 20px 0 10px;
+    max-width: 236px;
+  }
+  
+  .card__title{
+    --padding-horizontal: 0 20px 0 10px;
+  }
+
+  .card__description {
+    --padding-horizontal: 0 20px 0 6px;
+  }
+
+  .reasons .section__title {
+    grid-column: 1 / -1;
+  }
+
+  .reasons .section__card-list {
+    grid-column: 1 / -1;
+  }
+
+  .reasons .card__title {
+    margin-left: 20px;
+  }
+
+  .reasons .card__description {
+    --padding-horizontal: 0 20px;
+  }
+
+  .advice {
+    grid-template-rows: 23px 1fr;
+  }
+
+  .advice .section__title {
+    grid-column: 1 / -1;
+    grid-row: 1;
+  }
+
+  .advice .card__title {
+    grid-column: 2 / 3;
+    grid-row: 1;
+    margin-right: 20px;
+  }
+
+  .advice .section__card-list{
+    grid-column: 2 / 3;
+    grid-row: 2;
+  }
+
+  .card__title-advice {
+    margin-right: 20px;
+  }
+
+  .gallery{
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin: 0 20px;
+  }
+
+  .gallery__image {
+    padding: 0;
+  }
+
+  .section__gallery{
+    gap: 22px;
+  }
+
+  .section__gallery .card__title {
+    margin-left: 20px;  
+  }
+
+  .sunset_image {
+    grid-column: 1 / 3;
+    grid-row: 1 / auto;
+  }
+
+  .ice-cream_image {
+    grid-column: 3;
+    grid-row: 1 / 3;
+  }
+
+  .tape_image {
+    grid-column: 1;
+    grid-row: 2 / 4;
+  }
+
+  .street_image {
+    grid-column: 2 / 4;
+    grid-row: 3;
+  }
+
+  .footer { 
+    min-height: 1024px;
+  }
+
+  .footer .title {
+    justify-self: center;
+  }
+}
