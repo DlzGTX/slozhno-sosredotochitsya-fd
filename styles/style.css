@@ -2,4 +2,237 @@
 
 .page {
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
+  background-color: var(--background-color);
+  background-image: var(--cover-image);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.header {
+  position: relative;
+  height: 100vh; /*высота окна = высоте окна браузера*/
+  min-height: 668px;
+  display: grid;
+  grid-template-rows: 1fr min content 1fr;
+  gap: 46px;
+  margin-bottom: 40px;
+}
+
+.header__theme-menu {
+  justify-self: flex-end;
+  color: var(--second-text-color);
+  font-family: var(--main-font-family);
+  font-size: var(--main-font-size);
+  font-weight: var(--font-weight-regular);
+  margin-right: 17px;
+  margin-top: 73px;
+}
+
+.header__theme-menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.header__theme-menu-button {
+  border: none;
+  text-transform: lowercase;
+  background-color: transparent;
+  border: none;
+}
+
+.header__theme-menu-button:hover {
+  border: var(--corner-border);
+}
+
+.header__theme-menu-button:focus-visible {
+  border: var(--corner-border);
+  outline: none;
+}
+
+.header__decor-text {
+  position: absolute;
+  content: "";
+  top: 10px;
+  right: 38px;
+  color: var(--second-text-color);
+  font-family: var(--main-font-family);
+  font-size: var(--main-font-size);
+  font-weight: var(--font-weight-regular);
+}
+
+.header__decor-text::after {
+  position: absolute;
+  content: "";
+  width: 9px;
+  height: 9px;
+  top: 8px;
+  right: -17px;
+  border-radius: 50%;
+  box-shadow: 0 0 4px 2px currentColor;
+  background-color: currentColor;
+}
+
+.decoration__zone::before {
+  position: absolute;
+  content: "";
+  top: 10px;
+  right: 10px;
+  width: var(--decor-size);
+  height: var(--decor-size);
+  border-top: var(--corner-border);
+  border-right: var(--corner-border);
+}
+
+.decoration__zone::after {
+  position: absolute;
+  content: "";
+  bottom: 10px;
+  left: 10px;
+  width: var(--decor-size);
+  height: var(--decor-size);
+  border-bottom: var(--corner-border);
+  border-left: var(--corner-border);
+}
+
+.header__title-link {
+  text-decoration: none;
+  margin: 10px 0 0 10px;
+}
+
+.title__item {
+  color: var(--title-color);
+  font-family: var(--main-font-family);
+  font-size: 116px;
+  font-weight: 700;
+  line-height: 83%;
+  text-shadow: 4px 4px 0 var(--title-background-color);
+}
+
+.header__title {
+  display: flex;
+  flex-direction: column;
+}
+
+.header__description {
+  color: #000028;
+  background-color: var(--title-background-color);
+  font-family: var(--main-font-family);
+  font-size: var(--main-font-size);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--main-line-height);
+  margin: var(--padding-horizontal);
+  block-size: 117px;
+}
+
+/* main */
+.main {
+  background-image: none;
+  display: grid;
+  gap: var(--main-gap);
+  margin-bottom: 42px;
+  background-color: var(--background-color);
+}
+
+.section {
+  display: grid;
+  gap: var(--section-gap);
+}
+
+.section__title {
+  font-family: var(--main-font-family);
+  font-size: var(--main-font-size);
+  font-weight: var(--font-weight-bold);
+  color: var(--second-text-color);
+  margin-left: 10px;
+  padding-right: 9px;
+  line-height: var(--main-line-height);
+}
+
+.section__card-list {
+  display: grid;
+  gap: var(--section-gap);
+}
+
+.section__card-list-item {
+  display: grid;
+  gap: var(--section-gap);
+}
+
+.card {
+  display: grid;
+  gap: 10px;
+}
+
+.card__title {
+  font-family: var(--main-font-family);
+  font-size: var(--main-font-size);
+  font-weight: var(--font-weight-bold);
+  color: #000028;
+  background: var(--title-background-color);
+  margin: var(--padding-horizontal);
+}
+
+.card__description {
+  font-family: var(--main-font-family);
+  font-size: var(--main-font-size);
+  font-weight: var(--font-weight-regular);
+  color: var(--main-text-color);
+  line-height: var(--main-line-height);
+  padding: var(--padding-horizontal);
+}
+
+.link {
+  text-decoration: none;
+  text-shadow: 2px 2px 0 var(--second-text-color);
+}
+
+.link:hover {
+  border-bottom: var(--corner-border);
+}
+
+.link:focus-visible {
+  border: var(--corner-border);
+  outline: none;
+}
+
+.link:focus {
+  outline: none;
+}
+
+.card__title-advice {
+  font-family: var(--main-font-family);
+  font-size: var(--main-font-size);
+  font-weight: var(--font-weight-regular);
+  color: var(--background-color);
+  background: var(--title-background-color);
+  margin: var(--padding-horizontal);
+}
+
+.section__gallery {
+  display: grid;
+  gap: 10px;
+}
+
+.gallery {
+  display: grid;
+  gap: 10px;
+}
+
+.gallery__image {
+  object-fit: cover;
+  inline-size: 100%;
+  block-size: 100%;
+  padding: 0 10px;
+}
+
+.footer {
+  position: relative;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  height: 100vh;
+  min-height: 668px;
+  background-color: var(--background-color); 
 }
