@@ -10,6 +10,7 @@
   --title-color: #ffc2e6;
   --main-text-color: #353430;
   --second-text-color: #353430;
+  --third-text-color: #353430;
   --title-background-color: #ff8dcb;
   --decor-color: #353430;
   --corner-border: 1px solid var(--decor-color);
@@ -24,6 +25,7 @@
     --main-text-color: #353430;
     --title-color: #ffc2e6;
     --second-text-color: #353430;
+    --third-text-color: #353430;
     --title-background-color: #ff8dcb;
     --decor-color: #353430;
     --corner-border: 1px solid var(--decor-color);
